@@ -1,0 +1,1 @@
+﻿https://htmlbook.ru/samhtml/tekst/spetssimvoly
