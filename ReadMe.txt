@@ -3,6 +3,11 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIM9hJVxk-QXqB6I_UhCphfQ
 
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
+TODO:
+Написать регулярно выражение, которое задает уровень сложности пароля:
+минимальная длина 8 символов, обязательно должен включать в себя большую букву,
+маленькую букву, цифру и спецсимвол.
+
 Ctrl+Shift+Del - Clear history
 Ctrl+Shift+N/P - Incognito/Private mode
 Ctrl+Shift+T   - восстановление закрытой вкладки, окна, или предыдуще сессии браузера
