@@ -4,6 +4,9 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIM9hJVxk-QXqB6I_UhCphfQ
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
 TODO:
+1. Исключить пробел из регулярного выражения;
+
+TODO:
 Написать регулярно выражение, которое задает уровень сложности пароля:
 минимальная длина 8 символов, обязательно должен включать в себя большую букву,
 маленькую букву, цифру и спецсимвол.
