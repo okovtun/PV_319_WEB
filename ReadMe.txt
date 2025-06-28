@@ -3,8 +3,12 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIM9hJVxk-QXqB6I_UhCphfQ
 
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
+CSS Units:
+https://www.w3schools.com/cssref/css_units.php
+
 TODO:
 1. Исключить пробел из регулярного выражения;
+2. ???????????????????? Написать регулярное выражение для номера телефона;
 
 TODO:
 Написать регулярно выражение, которое задает уровень сложности пароля:
