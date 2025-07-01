@@ -1,4 +1,5 @@
-﻿https://github.com/okovtun/PV_319_WEB.git
+﻿https://okovtun.github.io/PV_319_WEB/01-HTML/index.html
+https://github.com/okovtun/PV_319_WEB.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIM9hJVxk-QXqB6I_UhCphfQ
 
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
@@ -7,10 +8,13 @@ CSS Units:
 https://www.w3schools.com/cssref/css_units.php
 
 TODO:
+Сделать рамку для главного окна калькулятора;
+
+DONE:
 1. Исключить пробел из регулярного выражения;
 2. ???????????????????? Написать регулярное выражение для номера телефона;
 
-TODO:
+DONE:
 Написать регулярно выражение, которое задает уровень сложности пароля:
 минимальная длина 8 символов, обязательно должен включать в себя большую букву,
 маленькую букву, цифру и спецсимвол.
