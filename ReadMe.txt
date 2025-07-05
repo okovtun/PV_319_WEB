@@ -4,6 +4,8 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIM9hJVxk-QXqB6I_UhCphfQ
 
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
+Digital Blasphemy
+
 CSS Units:
 https://www.w3schools.com/cssref/css_units.php
 
