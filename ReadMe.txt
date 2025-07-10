@@ -4,7 +4,23 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIM9hJVxk-QXqB6I_UhCphfQ
 
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
+///////////////////////////////////////////////////////////////////////////////////
+///////////////					   JavaScript						///////////////
+///////////////////////////////////////////////////////////////////////////////////
+
+TODO:
+1. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/Geometria1.txt
+2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg
+3. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg
+4. https://github.com/okovtun/BV_319/blob/master/ControlStructures/%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA_%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8F.png
+
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////////						HTML/CSS						///////////////
+///////////////////////////////////////////////////////////////////////////////////
+
 Digital Blasphemy
+
 
 CSS Units:
 https://www.w3schools.com/cssref/css_units.php
