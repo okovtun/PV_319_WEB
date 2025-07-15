@@ -28,7 +28,6 @@ input
 	width: 32px;
 	height: 32px;
 	margin: 24px;
-	transition:3s;
 	background-size:31px 31px;/*!!! ЭТО СВОЙСТВО НЕОБХОДИМО ДЛЯ ОТОБРАЖЕНИЯ ФОНОВОЙ КАРТИНКИ !!!*/
 }
 
@@ -59,3 +58,10 @@ img[src='img/sun.png']
 		background-image: url("img/sun.png");
 		filter: brightness(0) invert(1);
 	}
+
+#photo-container
+{
+	border:solid 1px;
+	width:400px;
+	height:300px;
+}

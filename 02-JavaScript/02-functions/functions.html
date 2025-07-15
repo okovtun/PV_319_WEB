@@ -2,11 +2,11 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="functions.css">
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="functions.css">
 	<link rel="icon" href="img/sun.png" type="image/x-icon">
-    <title>Functions</title>
+	<title>Functions</title>
 </head>
 <body class="light">
 	<div id="header">
@@ -16,11 +16,18 @@
 		<div id="switchBackground" onclick="SwitchBackground()"></div>
 		<!--<img src="img/moon.png" alt="Switch background image" id="switchBackground" onclick="SwitchBackground()">-->
 	</div>
-    <h1>Functions</h1>
-    <input type="number" name="base" id="base" placeholder="Основание степени">
-    <input type="number" name="exponent" id="exponent" placeholder="Показатель степени">
-    <input type="number" name="power" id="power" placeholder="Степень" readonly>
+	<div id="mouse"></div>
+	<h1>Functions</h1>
+	<input type="number" name="base" id="base" placeholder="Основание степени">
+	<input type="number" name="exponent" id="exponent" placeholder="Показатель степени">
+	<input type="number" name="power" id="power" placeholder="Степень" readonly>
 	<button onclick="calculatePower()">Вычислить</button>
+	<hr>
+	<input type="file" onchange="setImage()" id="image-file">
+	<br>
+	<div id="photo-container">
+		<img alt="Фотография" title="Фото" id="photo">
+	</div>
 	<script src="functions.js"></script>
 </body>
 </html>
