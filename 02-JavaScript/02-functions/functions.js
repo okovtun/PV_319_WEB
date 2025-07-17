@@ -42,8 +42,47 @@ document.addEventListener("mousemove", function (event)
 
 function setImage()
 {
-	let filename = document.getElementById("image-file").value;
-	console.log(filename);
-	let splitted_filename = filename.split('\\');
-	document.getElementById("photo").attributes.src = splitted_filename[splitted_filename.length - 1];
+	let filename = document.getElementById("image-file");
+	//console.log(filename);
+	//let splitted_filename = filename.split('\\');
+	//document.getElementById("photo").src = splitted_filename[splitted_filename.length - 1];
+	let reader = new FileReader();
+	reader.onload = function (e)
+	{
+		document.getElementById("photo").src = e.target.result;
+	}
+	reader.readAsDataURL(filename.files[0]);
+}
+
+document.body.onload = function tick_timer()
+{
+	let time = new Date();
+	document.getElementById("full-time").innerHTML = time;
+	document.getElementById("hours").innerHTML = addLeadingZero(time.getHours());
+	document.getElementById("minutes").innerHTML = addLeadingZero(time.getMinutes());
+	document.getElementById("seconds").innerHTML = addLeadingZero(time.getSeconds());
+
+	document.getElementById("year").innerHTML = time.getFullYear();
+	document.getElementById("month").innerHTML = addLeadingZero(time.getMonth() + 1);
+	document.getElementById("day").innerHTML = addLeadingZero(time.getDate());
+
+	document.getElementById("weekday").innerHTML = time.toLocaleDateString("ru", { weekday: 'long' });
+
+	/*if (document.getElementById("show-date").checked)
+	{
+		document.getElementById("current-date").style.visibility = "visible";
+	}
+	else
+	{
+		document.getElementById("current-date").style.visibility = "hidden";
+	}*/
+
+	document.getElementById("current-date").style.visibility = document.getElementById("show-date").checked ? "visible" : "hidden";
+	document.getElementById("weekday").style.visibility = document.getElementById("show-weekday").checked ? "visible" : "hidden";
+
+	setTimeout(tick_timer, 100);	//Функция setTimeout(function,delay) вызывает функцию 'function' с задержкой 'delay'.
+}
+function addLeadingZero(number)
+{
+	return number < 10 ? "0" + number : number;
 }

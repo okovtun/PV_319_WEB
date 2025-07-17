@@ -43,6 +43,8 @@ img[src='img/sun.png']
 }
 	.light #switchBackground
 	{
+		width: 32px;
+		height: 32px;
 		/*content: url('img/moon.png');*/
 		background-image: url("img/moon.png"); /*ДЛЯ ТОГО ЧТОБЫ ЭТО СВОЙСТВО ЗАРАБОТАЛО, В #SWITCHBACKGROUND НУЖНО ДОБАВИТЬ СВОЙСТВО 'BACKGROUND-SIZE'*/
 	}
@@ -54,6 +56,8 @@ img[src='img/sun.png']
 }
 	.dark #switchBackground
 	{
+		width: 32px;
+		height: 32px;
 		/*content: url('img/sun.png');*/
 		background-image: url("img/sun.png");
 		filter: brightness(0) invert(1);
@@ -64,4 +68,19 @@ img[src='img/sun.png']
 	border:solid 1px;
 	width:400px;
 	height:300px;
+}
+#clock
+{
+	text-align:		center;
+	border-top:		solid 1px;
+	border-bottom:	solid 1px;
+}
+	#clock h3
+	{
+		margin: 10px;
+	}
+input[type=checkbox]
+{
+	width:24px;
+	height:24px;
 }
