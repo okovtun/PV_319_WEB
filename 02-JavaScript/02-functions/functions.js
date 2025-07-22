@@ -136,5 +136,10 @@ function tickCountdown()
 
     console.log(`targetTime timezoneOffset:\t${now.getTimezoneOffset()}`);
 
+    const SECONDS_IN_MINUTE = 60;
+    const SECONDS_IN_HOUR = 3600;
+    const SECONDS_IN_DAY = 86400;
+    const SECONDS_IN_WEEK = SECONDS_IN_DAY*7;
+
     setTimeout(tickCountdown, 100);
 }
