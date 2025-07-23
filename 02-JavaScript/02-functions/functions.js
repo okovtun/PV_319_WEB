@@ -143,7 +143,7 @@ function tickCountdown()
     const DAYS_IN_MONTH = 365.25/12;
     const SECONDS_IN_MONTH = SECONDS_IN_DAY*DAYS_IN_MONTH;
     const SECONDS_IN_YEAR = SECONDS_IN_DAY*365 + SECONDS_IN_HOUR*6;
-
+    //https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate
     let time_of_day = timestamp % SECONDS_IN_DAY;
     let hours = Math.floor(time_of_day/SECONDS_IN_HOUR);
     if(hours > 0) time_of_day = (time_of_day%(hours*SECONDS_IN_HOUR));
