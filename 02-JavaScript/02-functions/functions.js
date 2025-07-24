@@ -148,17 +148,24 @@ function tickCountdown()
     //https://stackoverflow.com/questions/14/difference-between-math-floor-and-math-truncate
     let time_of_day = timestamp % SECONDS_IN_DAY;
     //Убираем время дня из timestamp:
-    let date = Math.floor(timestamp/SECONDS_IN_DAY);
-    date = date * SECONDS_IN_DAY;
+    let date = timestamp - time_of_day;//Math.trunc(timestamp/SECONDS_IN_DAY);//date = date * SECONDS_IN_DAY;
 
     let str_date = '';
-    let years   = Math.floor(date/SECONDS_IN_YEAR); str_date += `Years:${years},`;
-    if(years>0) date = (date%(years*SECONDS_IN_YEAR));
-    let months = Math.floor(date/SECONDS_IN_MONTH);str_date += `Months:${months},`;
-    if(months>0) date = (date%(months*SECONDS_IN_MONTH));
-    let weeks   = Math.floor(date/SECONDS_IN_WEEK); str_date += `Weeks:${weeks},`;
+    let years   = Math.trunc(date/SECONDS_IN_YEAR); str_date += `Years:${years},`;
+    date = date - years*SECONDS_IN_YEAR;
+    //if(years>0) date = (date%(years*SECONDS_IN_YEAR));
+    let months = Math.trunc(date/SECONDS_IN_MONTH);str_date += `Months:${months},`;
+    date = date - months*SECONDS_IN_MONTH;
+    //if(months>0) date = (date%(months*SECONDS_IN_MONTH));
+    let weeks   = Math.trunc(date/SECONDS_IN_WEEK); str_date += `Weeks:${weeks},`;
+    date = date - weeks*SECONDS_IN_WEEK;
     if(weeks>0) date = (date%(weeks*SECONDS_IN_WEEK));
-    let days    = Math.floor(date/SECONDS_IN_DAY);  str_date += `Days:${days},`;
+    let days    = Math.ceil(date/SECONDS_IN_DAY);  
+    //days = days - Math.trunc(years/4);
+    str_date += `Days:${days},`;
+    ////////////////////////////////////////////////////////////////////////////////////
+    
+    document.getElementById("date-reminded").innerHTML = str_date;
 
     ////////////////////////////////////////////////////////////////////////////
 
