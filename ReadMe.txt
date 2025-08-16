@@ -17,6 +17,17 @@ TODO:
 2. Решить проблему одного дня;
 3. Добить курсач;
 
+Project management:
+1. Водопадная модель;
+2. Треугольник проекта;
+3. Прототипирование;
+4. Спиральная модель;
+5. Итериционные модели разработки: Agile, Scrum;
+	https://agilemanifesto.org/
+	https://www.atlassian.com/ru/agile
+	https://agilealliance.org/agile101/
+6. Jira
+
 DONE:
 1. Сделать плавный переход для градиентного фона;
 2. Вытащить из Timestamp часы, минуты и секунды,
