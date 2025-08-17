@@ -26,6 +26,7 @@ Project management:
 	https://agilemanifesto.org/
 	https://www.atlassian.com/ru/agile
 	https://agilealliance.org/agile101/
+	ExtremeProgramming
 6. Jira
 
 DONE:
