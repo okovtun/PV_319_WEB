@@ -4,6 +4,9 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIM9hJVxk-QXqB6I_UhCphfQ
 
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
+PV_319_ASP:
+https://github.com/users/okovtun/projects/16/views/1
+
 MIL-STD-810
 
 ///////////////////////////////////////////////////////////////////////////////////
