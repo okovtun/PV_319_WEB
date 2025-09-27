@@ -13,6 +13,8 @@ MIL-STD-810
 ///////////////						ASP.NET							///////////////
 ///////////////////////////////////////////////////////////////////////////////////
 
+EFcore DataAnnotations:	https://learn.microsoft.com/en-us/ef/core/modeling/entity-properties?tabs=data-annotations%2Cwith-nrt
+
 TODO:
 1. Сделать значки для наших пунктов NavMenu;
 2. Дату рождения и возраст отбразить в формате 'YYYY.MM.DD';

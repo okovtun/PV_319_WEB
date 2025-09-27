@@ -8,6 +8,7 @@ namespace BlazorAcademy.Models
 	{
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		//[Column(TypeName = "SMALLINT")]
 		public short teacher_id { get; set; }
 		[Required]
 		public DateOnly work_since { get; set; }
