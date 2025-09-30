@@ -12,7 +12,7 @@ builder
 	.Services
 	.AddDbContext<UniversityContext>
 	(
-		opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+		opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection"))
 	);
 
 // Add services to the container.
