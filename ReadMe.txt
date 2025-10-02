@@ -18,7 +18,28 @@ https://in-cogni.github.io/react_music/
 
 EFcore DataAnnotations:	https://learn.microsoft.com/en-us/ef/core/modeling/entity-properties?tabs=data-annotations%2Cwith-nrt
 
+Скачать и установить VMware Workstation;
+
 TODO:
+В проекте 'ContosoUniversityHW':
+1. Проверить CRUD;
+2. На страницу 'Details' добавить курсы, пройденные студентом (Enrollments);
+3. Добавить поиск и сортировку;
+4. Настроить Pagination;
+5. *Залить проект на Hosting;
+
+DONE:
+В Solution 'MVC' добавить проект 'ContosoUniversityHW', и в нем проделать все тоже самое, но таким образом,
+чтобы База создалась на сервере SQLEXPRESS, а не LocalDB.
+То есть нужно:
+	1. Создать модели;
+	2. Написать контекст;
+	3. Создать подключение на основной сервер SQLEXPRESS;
+	4. Добавить миграции и Базу;
+	5. Заполнить Базу при помощи скрипта 'DbInitializer';
+https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-9.0
+
+DONE:
 1. Сделать значки для наших пунктов NavMenu;
 2. Дату рождения и возраст отбразить в формате 'YYYY.MM.DD';
 3. У преподавателей отбразить возраст и опыт работы;
