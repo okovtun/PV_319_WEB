@@ -17,6 +17,7 @@ https://in-cogni.github.io/react_music/
 ///////////////////////////////////////////////////////////////////////////////////
 
 EFcore DataAnnotations:	https://learn.microsoft.com/en-us/ef/core/modeling/entity-properties?tabs=data-annotations%2Cwith-nrt
+ASP.NET Web API tutorial:https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio
 
 Скачать и установить VMware Workstation;
 
