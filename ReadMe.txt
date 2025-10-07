@@ -21,6 +21,9 @@ EFcore DataAnnotations:	https://learn.microsoft.com/en-us/ef/core/modeling/entit
 Скачать и установить VMware Workstation;
 
 TODO:
+1. Добавить все модели в Navigation menu;
+
+DONE:
 1. ***Обеспечить сортировку Calculated property 'FullName';
 2. Установить VMware Workstation:	https://itstepru.sharepoint.com/:u:/s/319949/EcRkMoP_fPxCruypGPBAWjgBWeq-kBFDtihaJ_ZYQTo6QQ?e=ChDggN
 
