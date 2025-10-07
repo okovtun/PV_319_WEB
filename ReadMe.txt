@@ -21,6 +21,10 @@ EFcore DataAnnotations:	https://learn.microsoft.com/en-us/ef/core/modeling/entit
 Скачать и установить VMware Workstation;
 
 TODO:
+1. ***Обеспечить сортировку Calculated property 'FullName';
+2. Установить VMware Workstation:	https://itstepru.sharepoint.com/:u:/s/319949/EcRkMoP_fPxCruypGPBAWjgBWeq-kBFDtihaJ_ZYQTo6QQ?e=ChDggN
+
+DONE:
 В проекте 'ContosoUniversityHW':
 1. Проверить CRUD;
 2. На страницу 'Details' добавить курсы, пройденные студентом (Enrollments);
