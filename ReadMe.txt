@@ -22,6 +22,10 @@ ASP.NET Web API tutorial:https://learn.microsoft.com/en-us/aspnet/core/tutorials
 Скачать и установить VMware Workstation;
 
 TODO:
+На странице 'Instructors' для выбранного курса должны отображаться студенты, прошедшие этот курс:
+	https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/read-related-data?view=aspnetcore-9.0
+
+DONE:
 1. Добавить все модели в Navigation menu;
 
 DONE:
