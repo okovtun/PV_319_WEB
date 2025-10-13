@@ -12,4 +12,3 @@ namespace BlazorAcademy.Models
 		public int group { get; set; }
 	}
 }
-//
