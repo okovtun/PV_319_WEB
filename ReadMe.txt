@@ -17,10 +17,26 @@ https://in-cogni.github.io/react_music/
 ///////////////////////////////////////////////////////////////////////////////////
 
 EFcore DataAnnotations:	https://learn.microsoft.com/en-us/ef/core/modeling/entity-properties?tabs=data-annotations%2Cwith-nrt
+ASP.NET Web API tutorial:https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio
 
 Скачать и установить VMware Workstation;
 
 TODO:
+На страницу препода 'Edit' добавить курсы, которые он может читать:
+	https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/update-related-data?view=aspnetcore-9.0#add-courses-to-edit-page
+
+DONE:
+На странице 'Instructors' для выбранного курса должны отображаться студенты, прошедшие этот курс:
+	https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/read-related-data?view=aspnetcore-9.0
+
+DONE:
+1. Добавить все модели в Navigation menu;
+
+DONE:
+1. ***Обеспечить сортировку Calculated property 'FullName';
+2. Установить VMware Workstation:	https://itstepru.sharepoint.com/:u:/s/319949/EcRkMoP_fPxCruypGPBAWjgBWeq-kBFDtihaJ_ZYQTo6QQ?e=ChDggN
+
+DONE:
 В проекте 'ContosoUniversityHW':
 1. Проверить CRUD;
 2. На страницу 'Details' добавить курсы, пройденные студентом (Enrollments);
