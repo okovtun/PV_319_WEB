@@ -141,7 +141,7 @@ namespace ContosoUniversity.Controllers
 						Assigned = instructorCourses.Contains(course.CourseID)
 					});
 			}
-			ViewData["Course"] = viewModel;
+			ViewData["Courses"] = viewModel;
 		}
 
 		// POST: Instructors/Edit/5
@@ -178,8 +178,41 @@ namespace ContosoUniversity.Controllers
 			return View(instructor);
 		}
 		void UpdateInstructorCourses(string[] selectedCourses, Instructor instructor)
-		{ 
+		{
+			if (selectedCourses == null)
+			{ 
+				instructor.CourseAssignments = new List<CourseAssignment>();
+				return;
+			}
 
+			HashSet<string> selectedCoursesHS = new HashSet<string>(selectedCourses);
+			HashSet<int> instructorCourses =
+				new HashSet<int>(instructor.CourseAssignments.Select(c => c.CourseID));
+			foreach (Course course in _context.Courses)
+			{
+				if (selectedCoursesHS.Contains(course.CourseID.ToString()))
+				{
+					if (!instructorCourses.Contains(course.CourseID))
+						instructor.CourseAssignments.Add
+						(
+							new CourseAssignment
+							{
+								InstructorID = instructor.ID,
+								CourseID = course.CourseID
+							}
+						);
+				}
+				else
+				{
+					if (instructorCourses.Contains(course.CourseID))
+					{
+						CourseAssignment erased = instructor
+							.CourseAssignments
+							.FirstOrDefault(i => i.CourseID == course.CourseID);
+						_context.Remove(erased);
+					}
+				}
+			}
 		}
 		/*[HttpPost]
         [ValidateAntiForgeryToken]

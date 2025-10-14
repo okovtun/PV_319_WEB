@@ -16,6 +16,14 @@ https://in-cogni.github.io/react_music/
 ///////////////						ASP.NET							///////////////
 ///////////////////////////////////////////////////////////////////////////////////
 
+TODO:
+1. В Solution 'MVC' создать проект 'Academy' и в нем отобразить:
+	Студентов, Группы, Направления и Преподов;
+2. На каждой странице должна быть сротировка и Pagination;
+3. Для выбранного преподавателя на страницах 'Details' и 'Edit' должны отображаться дисциплины которые он может вести;
+4. На странице 'Edit' должна быть возможность добавлять и удалять дисциплины для выьранного препода;
+5. На страницах преподавателей и студентов должно отобажаться фото выбранного преподавателя либо студента;
+
 EFcore DataAnnotations:	https://learn.microsoft.com/en-us/ef/core/modeling/entity-properties?tabs=data-annotations%2Cwith-nrt
 ASP.NET Web API tutorial:https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio
 
