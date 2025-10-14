@@ -115,13 +115,33 @@ namespace ContosoUniversity.Controllers
 			//var instructor = await _context.Instructors.FindAsync(id);
 			Instructor instructor = await _context.Instructors
 				.Include(i => i.OfficeAssignment)
+				.Include(i => i.CourseAssignments).ThenInclude(i => i.Course)
 				.AsNoTracking()
 				.FirstOrDefaultAsync(m => m.ID == id);
 			if (instructor == null)
 			{
 				return NotFound();
 			}
+			PopulateAssignedCourseData(instructor);
 			return View(instructor);
+		}
+		void PopulateAssignedCourseData(Instructor instructor)
+		{
+			DbSet<Course> allCourses = _context.Courses;
+			HashSet<int> instructorCourses = 
+				new HashSet<int>(instructor.CourseAssignments.Select(c => c.CourseID));
+			List<AssignedCourseData> viewModel = new List<AssignedCourseData>();
+			foreach (Course course in allCourses)
+			{
+				viewModel.
+					Add(new AssignedCourseData 
+					{
+						CourseID = course.CourseID,
+						Title = course.Title,
+						Assigned = instructorCourses.Contains(course.CourseID)
+					});
+			}
+			ViewData["Course"] = viewModel;
 		}
 
 		// POST: Instructors/Edit/5
@@ -129,17 +149,20 @@ namespace ContosoUniversity.Controllers
 		// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost, ActionName("Edit")]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> EditPost(int? id)
+		public async Task<IActionResult> EditPost(int? id, string[] selectedCourses)
 		{
 			if (id == null) return NotFound();
 
 			Instructor instructor = await _context.Instructors
 				.Include(i => i.OfficeAssignment)
+				.Include(i => i.CourseAssignments)
+					.ThenInclude(i => i.Course)
 				.FirstOrDefaultAsync(m => m.ID == id);
 
 			if (await TryUpdateModelAsync<Instructor>(instructor, "", i => i.FirstName, i => i.LastName, i => i.HireDate, i => i.OfficeAssignment))
 			{
 				if(string.IsNullOrWhiteSpace(instructor.OfficeAssignment?.Location))instructor.OfficeAssignment = null;
+				UpdateInstructorCourses(selectedCourses, instructor);
 				try
 				{
 					await _context.SaveChangesAsync();
@@ -150,7 +173,13 @@ namespace ContosoUniversity.Controllers
 				}
 				return RedirectToAction(nameof(Index));
 			}
+			UpdateInstructorCourses(selectedCourses, instructor);
+			PopulateAssignedCourseData(instructor);
 			return View(instructor);
+		}
+		void UpdateInstructorCourses(string[] selectedCourses, Instructor instructor)
+		{ 
+
 		}
 		/*[HttpPost]
         [ValidateAntiForgeryToken]
