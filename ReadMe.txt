@@ -12,6 +12,12 @@ MIL-STD-810
 Music
 https://in-cogni.github.io/react_music/
 
+TODO:
+1. Создать виртуальную машину UbuntuHome и усиановить на нее UbuntuServer;
+2. Скачать  установить на виртуальную машину FreeBSD:
+	https://download.freebsd.org/releases/ISO-IMAGES/14.3/
+3. https://citforum.ru/operating_systems/linux/user/gl-03/gl_03_01.shtml
+
 ///////////////////////////////////////////////////////////////////////////////////
 ///////////////						ASP.NET							///////////////
 ///////////////////////////////////////////////////////////////////////////////////
@@ -27,7 +33,11 @@ TODO:
 EFcore DataAnnotations:	https://learn.microsoft.com/en-us/ef/core/modeling/entity-properties?tabs=data-annotations%2Cwith-nrt
 ASP.NET Web API tutorial:https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-9.0&tabs=visual-studio
 
-Скачать и установить VMware Workstation;
+TODO:
+1. Скачать и установить VMware Workstation:
+	https://itstepru.sharepoint.com/:u:/s/319949/EcRkMoP_fPxCruypGPBAWjgBWeq-kBFDtihaJ_ZYQTo6QQ?e=X0Or8h
+2. Скачать образ Ubuntu-22.04.5-Live-Server:
+	https://releases.ubuntu.com/22.04/?_ga=2.149898549.2084151835.1707729318-1126754318.1683186906&_gl=1*19jagfo*_gcl_au*MTIyNjQ1Nzg4My4xNzU5Njk1ODgw
 
 TODO:
 На страницу препода 'Edit' добавить курсы, которые он может читать:
