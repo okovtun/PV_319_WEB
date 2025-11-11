@@ -4,6 +4,25 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIM9hJVxk-QXqB6I_UhCphfQ
 
 https://htmlbook.ru/samhtml/tekst/spetssimvoly
 
+FreeBSD:
+https://docs.freebsd.org/ru/books/handbook/bsdinstall/
+https://download.freebsd.org/releases/ISO-IMAGES/14.3/FreeBSD-14.3-RELEASE-amd64-dvd1.iso
+
+TODO:
+Захостить BlazorAcademy на Ubuntu сервере;
+
+TODO:
+1. Установить MS SQL Server на FreeBSD;
+
+DONE:
+1. Установить и настроить графическую оболочку на виртуальной машине Ubuntu;
+2. Настройка сети в Ubuntu: https://documentation.ubuntu.com/server/explanation/networking/configuring-networks/
+3. Установить MS SQL Server и подключиться к этому Серверу при помощи SSMS:
+	https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver17&tabs=ubuntu2004%2C2025ubuntu2204%2Codbc-ubuntu-2004
+
+DONE:
+Повторить IP-адресацию.
+
 PV_319_ASP:
 https://github.com/users/okovtun/projects/16/views/1
 
@@ -13,6 +32,11 @@ Music
 https://in-cogni.github.io/react_music/
 
 TODO:
+1. https://citforum.ru/operating_systems/linux/user/gl-04/gl_04_05.shtml;
+2. https://docs.freebsd.org/en/books/handbook/basics/#permissions;
+3. https://docs.freebsd.org/ru/books/handbook/basics/#permissions;
+
+DONE:
 1. Создать виртуальную машину UbuntuHome и усиановить на нее UbuntuServer;
 2. Скачать  установить на виртуальную машину FreeBSD:
 	https://download.freebsd.org/releases/ISO-IMAGES/14.3/
