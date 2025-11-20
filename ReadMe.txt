@@ -9,6 +9,10 @@ https://docs.freebsd.org/ru/books/handbook/bsdinstall/
 https://download.freebsd.org/releases/ISO-IMAGES/14.3/FreeBSD-14.3-RELEASE-amd64-dvd1.iso
 
 TODO:
+1. У кого мало места на корневом разделе, перераспределить его в GParted
+2. Захостить 'BlazorAcademy' на сервере 'UbuntuHome';
+
+DONE:
 Захостить BlazorAcademy на Ubuntu сервере;
 
 TODO:
